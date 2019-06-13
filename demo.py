@@ -6,14 +6,14 @@ from sentenceSimilarity import SentenceSimilarity
 
 if __name__ == '__main__':
     # 读入训练集
-    file_obj = FileObj(r"testSet/trainSet.txt")
+    file_obj = FileObj(r"data/trainSet.txt")
     train_sentences = file_obj.read_lines()
     # 读入测试集1
-    file_obj = FileObj(r"testSet/testSet1.txt")
+    file_obj = FileObj(r"data/testSet1.txt")
     test1_sentences = file_obj.read_lines()
 
     # 读入测试集2
-    file_obj = FileObj(r"testSet/testSet2.txt")
+    file_obj = FileObj(r"data/testSet2.txt")
     test2_sentences = file_obj.read_lines()
 
     # 分词工具，jieba分词，
